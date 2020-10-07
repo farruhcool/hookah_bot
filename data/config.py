@@ -10,8 +10,6 @@ PGUSER = str(os.getenv("PGUSER"))
 PGPASSWORD = str(os.getenv("PGPASSWORD"))
 DATABASE = str(os.getenv("DATABASE"))
 
-# PROXY = str(os.getenv('PROXY'))
-
 admins = [
     os.getenv("ADMIN_ID"),
 ]
