@@ -47,7 +47,7 @@ async def location_data(message: types.Message, state: FSMContext):
     longitude = location.longitude
     user = await commands.select_user(id=message.from_user.id)
 
-    await message.answer(f"Спасибо. \n"
+    await message.answer(f"Спасибо. Ваше местоположение: \n"
                          f"Latitude = {latitude}\n"
                          f"Longitude = {longitude}\n\n", reply_markup=ReplyKeyboardRemove())
 
